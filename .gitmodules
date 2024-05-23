@@ -1,0 +1,3 @@
+[submodule "chat-bot"]
+    path=chat-bot
+    url=https://github.com/Gcraft13/chat-bot.git
