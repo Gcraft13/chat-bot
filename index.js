@@ -8,3 +8,11 @@ const server = app.listen(5000);
 app.get("/", (req, res) => {
   res.sendFile("index.html");
 });
+
+const SpeechRecognition =
+  window.SpeechRecognition() || window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
+
+document.querySelector("button").addEventListener("click", () => {
+  recognition.start();
+});
